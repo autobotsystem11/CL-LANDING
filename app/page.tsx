@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import FreeToolBanner from "@/components/FreeToolBanner";
 import WhyUs from "@/components/WhyUs";
 import Features from "@/components/Features";
 import Reviews from "@/components/Reviews";
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <FreeToolBanner />
         <WhyUs />
         <Features />
         <Reviews />

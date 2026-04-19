@@ -166,10 +166,12 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-wrap gap-4 mb-12 animate-fade-up" style={{ animationDelay: "0.5s" }}>
           <a
-            href="#contact"
+            href="https://ad-dashboard-orcin.vercel.app/calculator.html"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-orange-500 hover:bg-orange-400 text-white font-bold px-8 py-3.5 rounded-full transition-all duration-200 shadow-xl shadow-orange-500/30 hover:shadow-orange-400/50 hover:-translate-y-0.5 text-sm uppercase tracking-wide"
           >
-            Get Started
+            免费预测广告效果
           </a>
           <a
             href="#features"
