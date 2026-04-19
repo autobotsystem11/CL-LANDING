@@ -5,6 +5,7 @@ import WhyUs from "@/components/WhyUs";
 import Features from "@/components/Features";
 import Reviews from "@/components/Reviews";
 import Pricing from "@/components/Pricing";
+import OrderSection from "@/components/OrderSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Features />
         <Reviews />
         <Pricing />
+        <OrderSection />
         <Contact />
       </main>
       <Footer />
