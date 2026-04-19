@@ -59,12 +59,25 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="#contact"
-            className="bg-orange-500 hover:bg-orange-400 text-white font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-200 shadow-lg shadow-orange-500/25 hover:shadow-orange-400/40 hover:-translate-y-0.5"
+            href="https://ad-dashboard-orcin.vercel.app/calculator.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+            style={{
+              background: "linear-gradient(135deg, #06b6d4, #3b82f6)",
+              boxShadow: "0 0 18px rgba(6,182,212,0.5)",
+              animation: "navPulse 2.5s ease-in-out infinite",
+            }}
           >
-            Get Started
+            ✨ 免费预测广告效果
           </a>
         </div>
+        <style>{`
+          @keyframes navPulse {
+            0%, 100% { box-shadow: 0 0 14px rgba(6,182,212,0.45); opacity: 1; }
+            50%       { box-shadow: 0 0 30px rgba(6,182,212,0.85); opacity: 0.82; }
+          }
+        `}</style>
 
         {/* Mobile burger */}
         <button
