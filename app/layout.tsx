@@ -14,9 +14,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "CL SDN BHD — Grow Your Business in KL",
+  title: "CL SDN BHD — Grow Your Business in Malaysia",
   description:
-    "Kuala Lumpur's customer acquisition agency. Social media video sharing & Telegram entertainment bots that bring you real customers.",
+    "Malaysia's customer acquisition agency. Social media video sharing & Telegram entertainment bots that bring you real customers.",
 };
 
 export default function RootLayout({

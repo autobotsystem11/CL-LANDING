@@ -158,7 +158,7 @@ export default function Hero() {
           className="text-slate-300 text-base leading-relaxed max-w-md mb-8 animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
-          We help businesses in KL reach real customers — through social media
+          We help businesses in Malaysia reach real customers — through social media
           video sharing and custom Telegram entertainment bots that keep
           audiences engaged and coming back.
         </p>

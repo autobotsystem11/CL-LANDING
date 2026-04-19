@@ -1,7 +1,7 @@
 const reviews = [
   {
     name: "Ahmad Fariz",
-    role: "F&B Owner, KL",
+    role: "F&B Owner, Malaysia",
     roleZh: "餐饮业主",
     avatar: "AF",
     rating: 5,
