@@ -56,26 +56,40 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA */}
-        <div className="hidden md:flex items-center gap-3">
+        {/* CTA — Free Tool Button */}
+        <div className="hidden md:flex items-center gap-3 relative">
+          {/* HOT badge */}
+          <span
+            className="absolute -top-2 -right-2 z-10 text-white text-[10px] font-black px-1.5 py-0.5 rounded-full"
+            style={{ background: "#ef4444", letterSpacing: "0.05em", lineHeight: 1 }}
+          >
+            FREE
+          </span>
           <a
             href="https://ad-dashboard-orcin.vercel.app/calculator.html"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+            className="text-white font-black text-sm px-6 py-2.5 rounded-full transition-all duration-200 hover:scale-105"
             style={{
-              background: "linear-gradient(135deg, #06b6d4, #3b82f6)",
-              boxShadow: "0 0 18px rgba(6,182,212,0.5)",
-              animation: "navPulse 2.5s ease-in-out infinite",
+              background: "linear-gradient(135deg, #f97316 0%, #ec4899 50%, #a855f7 100%)",
+              backgroundSize: "200% 200%",
+              animation: "gradientShift 3s ease infinite, popPulse 2s ease-in-out infinite",
+              boxShadow: "0 0 24px rgba(249,115,22,0.6), 0 0 48px rgba(168,85,247,0.3)",
+              letterSpacing: "0.02em",
             }}
           >
-            ✨ 免费预测广告效果
+            🚀 免费预测广告效果
           </a>
         </div>
         <style>{`
-          @keyframes navPulse {
-            0%, 100% { box-shadow: 0 0 14px rgba(6,182,212,0.45); opacity: 1; }
-            50%       { box-shadow: 0 0 30px rgba(6,182,212,0.85); opacity: 0.82; }
+          @keyframes gradientShift {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+          @keyframes popPulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(249,115,22,0.55), 0 0 40px rgba(168,85,247,0.25); transform: scale(1); }
+            50%       { box-shadow: 0 0 36px rgba(249,115,22,0.9), 0 0 70px rgba(168,85,247,0.5); transform: scale(1.04); }
           }
         `}</style>
 
