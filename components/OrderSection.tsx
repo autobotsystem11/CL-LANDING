@@ -74,7 +74,7 @@ export default function OrderSection() {
       setCustomerName(form.name);
       setPaid(true);
     } catch {
-      alert("❌ 提交失败，请稍后再试或直接 WhatsApp 联系我们");
+      alert("❌ 提交失败，请稍后再试或直接 Telegram 联系 @autosystem11_bot");
     } finally {
       setSubmitting(false);
     }
@@ -192,7 +192,7 @@ export default function OrderSection() {
                       />
                     </div>
                     <div>
-                      <label className="block text-slate-400 text-xs mb-2">WhatsApp / 联系方式 *</label>
+                      <label className="block text-slate-400 text-xs mb-2">Telegram / 联系方式 *</label>
                       <input
                         type="text"
                         value={form.contact}
@@ -247,17 +247,24 @@ export default function OrderSection() {
                     </div>
                   </div>
 
-                  <div className="bg-orange-500/8 border border-orange-500/20 rounded-xl p-4 text-xs text-slate-400 mb-5">
-                    ⚠️ 付款后请 WhatsApp 我们发送截图确认，谢谢！
+                  <div className="bg-blue-500/8 border border-blue-500/20 rounded-xl p-4 text-sm text-slate-300 mb-5 space-y-2">
+                    <p className="font-bold text-white">📋 付款后的步骤：</p>
+                    <p>1️⃣ 打开 Telegram，发送以下消息给 <strong className="text-blue-400">@autosystem11_bot</strong>：</p>
+                    <div className="bg-black/30 rounded-lg px-3 py-2 font-mono text-blue-300 text-xs mt-1">
+                      /register {customerName}
+                    </div>
+                    <p>2️⃣ 然后发送你的付款截图给 Bot</p>
+                    <p className="text-slate-400 text-xs">✅ 审批后 Bot 会自动发送你的 ADS REPORT 账号密码</p>
                   </div>
 
                   <a
-                    href="https://wa.me/60YOUR_WHATSAPP_NUMBER"
+                    href="https://t.me/autosystem11_bot"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-green-500 text-white font-bold text-sm px-8 py-3 rounded-full hover:bg-green-400 transition-colors"
+                    className="inline-block text-white font-bold text-sm px-8 py-3 rounded-full transition-colors"
+                    style={{ background: "linear-gradient(135deg,#229ED9,#1a7fc1)" }}
                   >
-                    📱 WhatsApp 发送截图
+                    ✈️ 打开 @autosystem11_bot
                   </a>
                 </div>
               )}
